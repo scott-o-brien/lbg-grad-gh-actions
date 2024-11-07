@@ -20,7 +20,7 @@ jobs:
         run: mvn clean package -Dmaven.test.skip
       - name: set up artifacts
         run: mkdir artifiacts && cp test.log target/*.jar artifacts
-      - uses: actions/upload-artifacs@v3
+      - uses: actions/upload-artifact@v3
         with:
          name: Package
          path: artifacts
