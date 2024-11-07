@@ -12,8 +12,8 @@ jobs:
       - name: set up JDK
         uses: action/setup-java@v3
         with:
-         java-version:'11'
-         distribution:'temurin'
+         java-version: '11'
+         distribution: 'temurin'
       - name: run tests
         run: mvn clean test | tee test.log
       - name: build artifacts
