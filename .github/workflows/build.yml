@@ -1,7 +1,7 @@
 name: Java Apps - Run Tests and Package
 on:
   push:
-    branches:["main"]
+    branches: ["main"]
   workflow_dispatch:
 jobs:
   test_and_build:
